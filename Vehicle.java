@@ -10,23 +10,29 @@ class Vehicle{
 }
 abstract class VehicleM{
 	public abstract void start();
-	public abstract void stop();
+	public void stop(){
+		System.out.println("Vehicle Is Stopped");
+	}
+
 }
 class TwoW extends VehicleM{
 	public void start(){
 		System.out.print("Two Wheeler is Started \n");
 	}
-	public void stop(){
+	/*public void stop(){
 		System.out.print("Two Wheeler is Stopped \n");
 	}
+	*/
 }
 class FourW extends VehicleM{
 	public void start(){
 		System.out.println("Four Wheeler Started");
 	}
+	/*
 	public void stop(){
 		System.out.println("Four Wheeler Stopped");
 	}
+	*/
 }
 
 
